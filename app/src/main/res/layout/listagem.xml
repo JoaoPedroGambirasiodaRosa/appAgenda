@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/titulo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textStyle="bold"
+    android:text="Listagem de Cadastros"
+    android:gravity="center"
+    android:padding="20dp"
+    android:textSize="30dp"
+    android:textColor="@color/white"
+    android:background="@color/purple_500"/>
+
+<TextView
+    android:id="@+id/txtListOrd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/titulo"
+    android:gravity="end"
+    android:textSize="30dp"
+    android:visibility="invisible" />
+
+<TextView
+android:id="@+id/txtList1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/txtList1"
+android:paddingLeft="10dp"
+android:text="Nome:"
+android:textSize="30dp"
+android:visibility="invisible" />
+
+<EditText
+android:id="@+id/etList1"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/txtList1"
+android:layout_marginHorizontal="10dp"
+android:enabled="false"
+android:textColor="@color/black"
+android:textSize="30dp"
+android:visibility="invisible" />
+
+<TextView
+android:id="@+id/txtList2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/etList1"
+android:paddingLeft="10dp"
+android:text="Telefone:"
+android:textSize="30dp"
+android:visibility="invisible" />
+
+<EditText
+android:id="@+id/etList2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/txtList2"
+android:layout_marginHorizontal="10dp"
+android:enabled="false"
+android:textColor="@color/black"
+android:textSize="30dp"
+android:visibility="invisible" />
+
+<TextView
+android:id="@+id/txtList3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/etList2"
+android:paddingLeft="10dp"
+android:text="Endereço:"
+android:textSize="30dp"
+android:visibility="invisible" />
+
+<EditText
+android:id="@+id/etList3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/txtList3"
+android:layout_marginHorizontal="10dp"
+android:enabled="false"
+android:textColor="@color/black"
+android:textSize="30dp"
+android:visibility="invisible" />
+
+<TextView
+android:id="@+id/txtErro"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/titulo"
+android:layout_marginTop="100dp"
+    android:layout_margin="30dp"
+android:text="Nenhuma pessoa adicionada!"
+android:textColor="@color/purple_500"
+android:textSize="40dp" />
+
+<LinearLayout
+android:id="@+id/llCad"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/etList3">
+
+<Button
+    android:id="@+id/btAnterior"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="5dp"
+    android:layout_weight="1"
+    android:enabled="false"
+    android:text="Anterior"
+    android:textSize="15dp" />
+
+<Button
+    android:id="@+id/btProximo"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="40dp"
+    android:layout_weight="1"
+    android:enabled="false"
+    android:text="Próximo"
+    android:textSize="15dp" />
+</LinearLayout>
+
+<Button
+android:id="@+id/btFecharLis"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/llCad"
+android:layout_centerHorizontal="true"
+android:text="Fechar"
+android:textSize="15dp" />
+    </RelativeLayout>
+    </ScrollView>

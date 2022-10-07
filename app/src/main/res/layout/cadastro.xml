@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:id="@+id/linearlayout">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:text="Cadastro de Usuários:"
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/titulo"
+        android:textAlignment="gravity"
+        android:text="Preencha os dados abaixo:"
+        android:paddingBottom="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"/>
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:hint="Insira o Nome:"
+        android:textColorHint="@color/purple_500"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edtendereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtnome"
+        android:hint="Insira o Endereço:"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/edttelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtendereco"
+        android:hint="Insira o Telefone:"
+        android:layout_marginStart="15dp"
+        android:textColorHint="@color/purple_500"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btncad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edttelefone"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:text="Cadastrar"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnclean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btncad"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:text="Limpar"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btncan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnclean"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:text="Cancelar"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
